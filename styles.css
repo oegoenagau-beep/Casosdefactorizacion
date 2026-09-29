@@ -1,0 +1,28 @@
+:root{--bg:#f4f6fb;--card:#fff;--txt:#1b2333;--mut:#5b667a;--pri:#0b5c3b;--acc:#f2b705;--ok:#1a9d55;--bad:#d64545;--bd:#dde3ee}
+[data-tema=oscuro]{--bg:#10151f;--card:#1a2233;--txt:#e8edf7;--mut:#9aa6bd;--bd:#2a3550;--pri:#2fbf83}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.5}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:12px 20px;background:var(--pri);color:#fff}
+.brand{display:flex;align-items:center;gap:12px}.brand img{height:48px}
+h1{margin:0;font-size:1.25rem}small{opacity:.85}
+.stats{display:flex;gap:10px;align-items:center}
+.stats span{background:rgba(255,255,255,.18);padding:4px 10px;border-radius:99px;font-weight:600}
+button{cursor:pointer;font:inherit}
+#tema{background:none;border:0;font-size:1.3rem}
+main{max-width:900px;margin:20px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.caso{text-align:left;color:var(--txt);transition:.15s}.caso:hover{transform:translateY(-3px);border-color:var(--pri)}
+.caso b{display:block;font-size:1.05rem}.caso span{color:var(--mut);font-size:.85rem}
+.barra{height:8px;background:var(--bd);border-radius:9px;margin-top:10px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--acc)}
+.btn{background:var(--pri);color:#fff;border:0;border-radius:9px;padding:9px 16px;font-weight:600}
+.btn.sec{background:var(--card);color:var(--txt);border:1px solid var(--bd)}
+.tabs{display:flex;gap:8px;margin:14px 0;flex-wrap:wrap}
+.tabs button{border:1px solid var(--bd);background:var(--card);color:var(--txt);padding:7px 14px;border-radius:99px}
+.tabs button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.formula{font-family:Consolas,monospace;background:var(--bg);border-left:4px solid var(--acc);padding:10px 14px;border-radius:6px;margin:10px 0}
+input[type=text]{width:100%;padding:10px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--txt);font:1.05rem Consolas,monospace;margin:8px 0}
+.fb{margin-top:8px;font-weight:600}.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.pista{color:var(--mut);font-size:.9rem}
+footer{text-align:center;color:var(--mut);padding:20px;font-size:.85rem}
